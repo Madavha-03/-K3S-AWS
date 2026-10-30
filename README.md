@@ -120,9 +120,9 @@ Record the values — you will need them throughout this guide:
 
 | Hostname | Private IP | Public IP |
 |----------|------------|-----------|
-| k3s-master-1 | 10.0.x.x | 1.2.3.4 |
-| k3s-master-2 | 10.0.x.x | 1.2.3.5 |
-| k3s-master-3 | 10.0.x.x | 1.2.3.6 |
+| k3s-master-1 | 172.31.45.95 | 54.85.175.253 |
+| k3s-master-2 | 172.31.35.183 | 34.228.187.137 |
+| k3s-master-3 | 172.31.33.83 | 174.129.101.78 |
 
 ---
 
@@ -162,9 +162,9 @@ Add an entry for each node so they can resolve each other by hostname. Replace t
 
 ```sh
 sudo tee -a /etc/hosts <<EOF
-10.0.1.10  k3s-master-1
-10.0.1.11  k3s-master-2
-10.0.1.12  k3s-master-3
+172.31.45.95  k3s-master-1
+172.31.35.183 k3s-master-2
+172.31.33.83  k3s-master-3
 EOF
 ```
 
